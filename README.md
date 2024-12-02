@@ -1,7 +1,7 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/PX83n--N)
 # NeXtCS Project 01
-### Name0: YOUR NAME HERE
-### Name1: TEAMMATE NAME HERE (delete line if working solo)
+### Name0: Solomon Binyaminov
+### Name1: Georgy Krasnov
 ---
 
 ### Overview
@@ -17,17 +17,23 @@ This project will be completed in phases. The first phase will be to work on thi
 
 ## Phase 0: Selection, Analysis & Plan
 
-#### Selected Project: CHOOSE WISELY
+#### Selected Project: Cellular Automata
 
 ### Necessary Features
 What are the core features that your program should have? These should be things that __must__ be implemented in order to make the program useable/playable, not extra features that could be added to make the program more interesting/fun.
 
-YOUR ANSWERS HERE
+Square Background
+Boolean functions to test for rules
+Dead and alive colors
+Changing squares based on the rules
+2d array?
 
 ### Extra Features
 What are some features that are not essential to the program, but you would like to see (provided you have time after completing the necessary features. Theses can be customizations that are not part of the core requirements.
 
-YOUR ANSWERS HERE
+Color changing
+go-once / go-forever
+Speed
 
 ### Array Usage
 How will you be using arrays in this project?
@@ -36,18 +42,17 @@ How will you be using arrays in this project?
 - YOUR ANSER HERE
 
 2D Array:
-- YOUR ANSWER HERE
-
+- The actual square will be an array
 
 ### Controls
 How will your program be controlled? List all keyboard commands and mouse interactions.
 
 Keyboard Commands:
-- LIST OF COMMANDS HERE
+- Space (pause/unpause)
 
 Mouse Control:
-- Mouse movement:
-- Mouse pressed:
+- Mouse movement: N/A
+- Mouse pressed: N/A (maybe individually picking squares?)
 
 
 ### Classes
