@@ -20,52 +20,66 @@ This project will be completed in phases. The first phase will be to work on thi
 #### Selected Project: Cellular Automata
 
 ### Necessary Features
-What are the core features that your program should have? These should be things that __must__ be implemented in order to make the program useable/playable, not extra features that could be added to make the program more interesting/fun.
-
-Square Background
-Boolean functions to test for rules
-Dead and alive colors
-Changing squares based on the rules
-2d array?
+- Grid display with cell states
+- Start/pause simulation
+- Game of Life rules implementation
+- Cell toggling
+- Generation counter
+- Grid wrapping
+- Reset functionality
 
 ### Extra Features
-What are some features that are not essential to the program, but you would like to see (provided you have time after completing the necessary features. Theses can be customizations that are not part of the core requirements.
-
-Color changing
-go-once / go-forever
-Speed
+- Preset patterns
+- Color schemes
+- Speed control
+- Grid size options
+- Statistics display
+- Grid lines toggle
+- Save/load patterns
 
 ### Array Usage
-How will you be using arrays in this project?
 
 1D Array:
-- YOUR ANSER HERE
+- idk
 
 2D Array:
-- The actual square will be an array
+- Main cell grid
+- Next generation calculation
 
 ### Controls
-How will your program be controlled? List all keyboard commands and mouse interactions.
 
 Keyboard Commands:
-- Space (pause/unpause)
+- SPACE: Start/pause
+- R: Reset
+- G: Toggle grid
+- Arrows: Speed control
+- 1-9: Load presets
 
 Mouse Control:
-- Mouse movement: N/A
-- Mouse pressed: N/A (maybe individually picking squares?)
-
+- Click: Toggle cell
+- Drag: Draw cells
+- Right click: Erase cells
 
 ### Classes
-What classes will you be creating for this project? Include the instance variables and methods that you believe you will need. You will be required to create at least 2 different classes. If you are going to use classes similar to those we've made for previous assignments, you will have to add new features to them.
 
-CLASS NAME0
+Cell
 - Instance variables:
-  - LIST INSTANCE VARS HERE
-- METHODS
-  - LIST METHODS HERE
+  - boolean isAlive
+  - int x, y
+  - int age
+  - color displayColor
+- Methods:
+  - toggle(), update(), display()
+  - countNeighbors()
+  - setColor()
 
-CLASS NAME1
+Grid
 - Instance variables:
-  - LIST INSTANCE VARS HERE
-- METHODS
-  - LIST METHODS HERE
+  - Cell[][] grid
+  - int rows, cols
+  - boolean isRunning
+  - int generation, updateRate
+- Methods:
+  - updateGrid(), display(), reset()
+  - getPopulation(), savePattern(), loadPattern()
+  - setUpdateRate(), toggleCell(), loadPreset()
