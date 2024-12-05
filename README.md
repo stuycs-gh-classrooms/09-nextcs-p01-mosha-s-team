@@ -40,11 +40,10 @@ This project will be completed in phases. The first phase will be to work on thi
 ### Array Usage
 
 1D Array:
-- idk
+- Controlling neighbor patches
 
 2D Array:
 - Main cell grid
-- Next generation calculation
 
 ### Controls
 
@@ -68,6 +67,7 @@ Cell
   - int x, y
   - int age
   - color displayColor
+  - bool nextGenerationCalculation
 - Methods:
   - toggle(), update(), display()
   - countNeighbors()
